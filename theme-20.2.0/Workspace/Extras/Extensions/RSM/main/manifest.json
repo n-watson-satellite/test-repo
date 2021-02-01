@@ -1,0 +1,125 @@
+{
+	"name": "main",
+	"fantasyName": "main",
+	"vendor": "RSM",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"target_version": {
+		"SCA": "",
+		"SCS": ""
+	},
+	"version": "1.0.0",
+	"description": "My cool extension does magic!",
+	"assets": {
+		"img": {
+			"files": []
+		},
+		"fonts": {
+			"files": []
+		},
+		"services": {
+			"files": [
+				"services/main.Service.ss"
+			]
+		}
+	},
+	"configuration": {
+		"files": [
+			"Modules/main/Configuration/ebooks.json"
+		]
+	},
+	"templates": {
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/main/Templates/rsm_main_main.tpl",
+					"Modules/main/Templates/item_relations.tpl",
+					"Modules/main/Templates/global_views_confirmation_view_ext.tpl"
+				]
+			},
+			"myaccount": {
+				"files": [
+					"Modules/main/Templates/rsm_main_main.tpl",
+					"Modules/main/Templates/item_relations.tpl",
+					"Modules/main/Templates/global_views_confirmation_view_ext.tpl"
+				]
+			},
+			"checkout": {
+				"files": [
+					"Modules/main/Templates/rsm_main_main.tpl",
+					"Modules/main/Templates/item_relations.tpl",
+					"Modules/main/Templates/global_views_confirmation_view_ext.tpl"
+				]
+			}
+		}
+	},
+	"sass": {
+		"entry_points": {
+			"shopping": "Modules/main/Sass/_main-main.scss",
+			"myaccount": "Modules/main/Sass/_main-main.scss",
+			"checkout": "Modules/main/Sass/_main-main.scss"
+		},
+		"files": [
+			"Modules/main/Sass/_main-main.scss"
+		]
+	},
+	"javascript": {
+		"entry_points": {
+			"shopping": "Modules/main/JavaScript/RSM.main.main.js",
+			"myaccount": "Modules/main/JavaScript/RSM.main.main.js",
+			"checkout": "Modules/main/JavaScript/RSM.main.checkout.js"
+		},
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/main/JavaScript/RSM.main.main.js",
+					"Modules/main/JavaScript/main.View.js",
+					"Modules/main/JavaScript/ItemRelations.Model.js",
+					"Modules/main/JavaScript/ItemRelations.View.js",
+					"Modules/main/JavaScript/ItemRelations.Collection.js",
+					"Modules/main/JavaScript/RSM.AddressValidation.js",
+					"Modules/main/JavaScript/GlobalViews.Confirmation.View.Ext.js",
+					"Modules/main/JavaScript/LiveOrder.Model.Extension.js"
+				]
+			},
+			"myaccount": {
+				"files": [
+					"Modules/main/JavaScript/RSM.main.main.js",
+					"Modules/main/JavaScript/main.View.js",
+					"Modules/main/JavaScript/ItemRelations.Model.js",
+					"Modules/main/JavaScript/ItemRelations.View.js",
+					"Modules/main/JavaScript/ItemRelations.Collection.js",
+					"Modules/main/JavaScript/RSM.AddressValidation.js",
+					"Modules/main/JavaScript/GlobalViews.Confirmation.View.Ext.js",
+					"Modules/main/JavaScript/LiveOrder.Model.Extension.js"
+				]
+			},
+			"checkout": {
+				"files": [
+					"Modules/main/JavaScript/RSM.main.checkout.js",
+					"Modules/main/JavaScript/ItemRelations.Collection.js",
+					"Modules/main/JavaScript/RSM.AddressValidation.js",
+					"Modules/main/JavaScript/GlobalViews.Confirmation.View.Ext.js",
+					"Modules/main/JavaScript/LiveOrder.Model.Extension.js"
+				]
+			}
+		}
+	},
+	"ssp-libraries": {
+		"entry_point": "Modules/main/SuiteScript/RSM.main.main.js",
+		"files": [
+			"Modules/main/SuiteScript/RSM.main.main.js",
+			"Modules/main/SuiteScript/main.ServiceController.js",
+			"Modules/main/SuiteScript/ItemRelations.Model.js",
+			"Modules/main/SuiteScript/SearchHelper.js"
+		]
+	},
+	"suitescript2": {
+		"files": [
+			"Modules/main/SuiteScript2/main.Service.ss"
+		]
+	},
+	"path": "SuiteScripts/Deploy_Extensions/RSM/main@1.0.0",
+	"activation_id": "3",
+	"extension_id": "301"
+}

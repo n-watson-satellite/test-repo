@@ -1,0 +1,22 @@
+.shopping-layout {
+	@extend %sc-layout;
+}
+
+.shopping-layout-header {
+	margin-bottom: 10px;
+}
+
+.shopping-layout-footer {
+	@extend %sc-footer !optional;
+}
+
+.shopping-layout-breadcrumb, .shopping-layout-notifications {
+	@extend .container;
+}
+
+.shopping-layout-no-javascript-msg {
+	@extend .message-warning;
+	width: 100%;
+}
+
+

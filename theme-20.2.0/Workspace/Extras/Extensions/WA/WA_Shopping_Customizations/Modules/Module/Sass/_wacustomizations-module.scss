@@ -1,0 +1,201 @@
+/*
+	Sass Application Entry Point
+	Link all your sass dependencies in the right order
+
+	Example:
+	@import "other-sass-file.scss";
+	@import "../../<other module>/Sass/other-sass-file.scss";
+*/
+
+//////// Study Aids Collection landing page
+
+.study-aids-collection-landing-page {
+    .content-top {
+        p {
+            max-width: 90%;
+        }
+    }
+    .right-block {
+        padding-top: 0
+    }
+
+    @media (min-width: $screen-sm-min){
+        .right-block {
+            padding-top: 30px
+        }
+        .content-top .content-top-signin {
+            margin-top: 0;
+        }
+    }
+}
+.study-aids-includes {
+    h6 {
+        margin-top: 20px;
+    }
+}
+
+.study-aids-collection-landing {
+    padding-top: 30px;
+    h3 {
+        text-transform: uppercase;
+        color: #333;
+        text-align: center;
+        margin: 40px 0 0;
+        letter-spacing: 0.1em;
+    }
+
+    .study-aids-contents {
+        background: $sc-color-theme-background;
+        padding: 50px;
+        margin-top: -10px;
+
+        h3 {
+            margin: 0 0 20px;
+            text-align: left;
+        }
+
+        b {
+            margin-bottom: 10px;
+            display: inline-block;
+        }
+    }
+
+    @media (min-width: $screen-md-min){
+        .content-body {
+            display: flex;
+        }
+
+        padding-top: 70px;
+
+        .study-aids-contents {
+            width: 300px;
+        }
+
+        .study-aids-features-block {
+            width: calc(100% - 300px);
+
+        }
+    }
+}
+
+.study-aids-collection-video {
+    margin-top: 30px;
+
+    @media (min-width: $screen-sm-min) {
+        top: 200px;
+        left: 0;
+    }
+
+    @media (min-width: $screen-md-min) {
+        width: 80%;
+        top: 0;
+        margin: 20px 0 -90px;
+        position: relative;
+    }
+}
+.study-aids-collection-buy-box {
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+
+  label {
+      text-transform: uppercase;
+      font-size: 12px;
+      color: #fff;
+      font-weight: 500;
+      position: relative;
+      top: -10px;
+      margin: 0;
+  }
+
+   .button-primary {
+       background: #E0B253;
+       border-color: #E0B253;
+       color: #000;
+       height: 65px;
+       font-size: 16px;
+       width: 100%;
+
+       &:hover {
+           background: #ffca5b;
+       }
+   }
+
+  select {
+      border: none;
+      height: 47px;
+      width: 135px;
+      margin-top: -7px;
+      font-weight: 500;
+  }
+
+    @media (min-width: $screen-sm-min){
+        height: 70px;
+        flex-wrap: nowrap;
+    }
+}
+.study-aids-collection-buy {
+    width: 100%;
+
+    @media (min-width: $screen-sm-min){
+        width: 210px;
+    }
+}
+.subscription-price-block {
+    width: 130px;
+    text-align: center;
+}
+.subscription-price {
+    font-weight: 600;
+    font-size: 2.6em;
+    line-height: 1em;
+}
+
+.study-aids-features {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.study-aids-feature {
+    flex-basis: 50%;
+    padding: 20px;
+
+    img {
+        height: 30px
+    }
+
+    h4 {
+        margin: 5px 0;
+        font-size: 18px;
+    }
+
+    p {
+        color: #757575;
+        font-weight: 100;
+    }
+
+    @media(min-width: $screen-sm-min){
+        flex-basis: 33%;
+        padding: 30px;
+    }
+}
+.free-trial-button {
+    @extend .button-small;
+    @extend .button-secondary;
+    margin: 5px 0 10px;
+    display: block;
+    border: none;
+    color: $sc-color-link-featured;
+    letter-spacing: 1px;
+    font-size: 16px;
+
+    &:hover {
+        background: none;
+        border: none;
+        text-decoration: underline;
+        color: $sc-color-link-featured;
+    }
+}
+[data-facet-id="custitem_webstoreparentitem"] {
+    display: none;
+}

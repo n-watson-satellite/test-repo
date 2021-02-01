@@ -1,0 +1,24 @@
+.cms-landing-page {	
+  //@extend .container;
+	width: 100%;
+}
+.cms-landing-page-row {
+	@extend .row;
+	margin: 0;
+}
+.cms-landing-page-row-full-col {
+	@extend .col-md-12;
+	padding: 0;
+}
+.cms-landing-page-half-col {
+	@extend .col-md-6;
+	@extend .col-sm-6;
+}
+.cms-landing-page-quarter-col {
+	@extend .col-md-3;
+	@extend .col-sm-3; 
+}
+.cms-landing-page-three-quarter-col {
+	@extend .col-md-9;
+	@extend .col-sm-9; 
+}
