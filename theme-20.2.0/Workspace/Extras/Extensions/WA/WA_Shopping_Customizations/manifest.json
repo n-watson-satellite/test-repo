@@ -85,6 +85,10 @@
 		]
 	},
 	"path": "SuiteScripts/Deploy_Extensions/WA/WA_Shopping_Customizations@1.0.0",
+<<<<<<< HEAD
 	"activation_id": "2",
+=======
+	"activation_id": "3",
+>>>>>>> release/test
 	"extension_id": "401"
 }

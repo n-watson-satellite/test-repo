@@ -1,6 +1,10 @@
 {
     "type": "SCA",
+<<<<<<< HEAD
     "version": "19.2.4",
+=======
+    "version": "20.2.3",
+>>>>>>> release/test
     "application": [
         "shopping",
         "myaccount",
@@ -14,6 +18,12 @@
         "templates",
         "services",
         "configuration",
+<<<<<<< HEAD
         "assets"
+=======
+        "assets",
+        "suitescript2",
+        "translations"
+>>>>>>> release/test
     ]
 }

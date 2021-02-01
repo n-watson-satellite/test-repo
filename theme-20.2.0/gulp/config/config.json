@@ -26,7 +26,11 @@
     "application": {
         "application_manifest": {
             "type": "SCA",
+<<<<<<< HEAD
             "version": "19.2.4",
+=======
+            "version": "20.2.3",
+>>>>>>> release/test
             "application": [
                 "shopping",
                 "myaccount",
@@ -40,7 +44,13 @@
                 "templates",
                 "services",
                 "configuration",
+<<<<<<< HEAD
                 "assets"
+=======
+                "assets",
+                "suitescript2",
+                "translations"
+>>>>>>> release/test
             ]
         }
     },
@@ -74,6 +84,7 @@
         "user_agent": "sc-theme-devtools/2020.2.0",
         "email": "jhmservices.westacademic@gmail.com",
         "password": "satelliteCommerce42",
+<<<<<<< HEAD
         "account": "3668083",
         "role": 1079,
         "hostname": "3668083.restlets.api.netsuite.com",
@@ -81,6 +92,15 @@
         "domain": "www.westacademic.com",
         "webapp_id": "690128",
         "ssp_folder": "690128",
+=======
+        "account": "3668083_SB1",
+        "role": 1079,
+        "hostname": "3668083-sb1.restlets.api.netsuite.com",
+        "website": 3,
+        "domain": "westacademic.rsmusstaging.com",
+        "webapp_id": "768273",
+        "ssp_folder": "768273",
+>>>>>>> release/test
         "is_scis": false,
         "roleId": 1079
     },
@@ -178,7 +198,11 @@
                 ]
             },
             "path": "SuiteScripts/Deploy_Extensions/WA/WA_Shopping_Customizations@1.0.0",
+<<<<<<< HEAD
             "activation_id": "2",
+=======
+            "activation_id": "3",
+>>>>>>> release/test
             "extension_id": "401"
         },
         {
@@ -1519,7 +1543,11 @@
                 }
             },
             "path": "SuiteScripts/Deploy_Extensions/RSM/WestAcademic_Theme@1.0.0",
+<<<<<<< HEAD
             "activation_id": "2",
+=======
+            "activation_id": "3",
+>>>>>>> release/test
             "extension_id": "302"
         },
         {
@@ -1644,7 +1672,11 @@
                 ]
             },
             "path": "SuiteScripts/Deploy_Extensions/RSM/main@1.0.0",
+<<<<<<< HEAD
             "activation_id": "2",
+=======
+            "activation_id": "3",
+>>>>>>> release/test
             "extension_id": "301"
         }
     ]
