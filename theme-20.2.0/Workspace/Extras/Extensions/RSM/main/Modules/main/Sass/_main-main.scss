@@ -1,0 +1,55 @@
+/*
+	Sass Application Entry Point
+	Link all your sass dependencies in the right order
+
+	Example:
+	@import "other-sass-file.scss";
+	@import "../../<other module>/Sass/other-sass-file.scss";
+*/ 
+
+.main-info-card {
+    @extend .info-card;
+}
+$sc-color-highlight : #e8b03c;
+
+.main-info-card-content {
+    @extend .info-card-content;
+    color: $sc-color-secondary;
+    font-weight: bold;
+}
+.item-format-tiles {
+    margin: 0 -8px 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.item-format-tile {
+    border: 1px solid $sc-color-highlight;
+    padding: 8px 15px;
+    margin: 8px;
+    font-weight: 400;
+    max-width: 240px;
+    display: block;
+    color: #000;
+    font-size: 0.8em;
+    box-shadow: 0px 0px 4px -1px #e2c17b;
+    min-width: 100px;
+    height: 62px;
+    
+    b {
+        display: block;
+        font-size: 1.2rem;
+        font-weight: 600;
+        line-height: 1.4em;
+    }
+}
+a.item-format-tile:hover, a.item-format-tile:focus{
+    transform: scale(1.05);
+    background: $sc-color-link-featured;
+    color: #000;
+    box-shadow: none;
+}
+.item-format-tile-selected {
+    @extend .item-format-tile;
+    background: $sc-color-highlight;
+    box-shadow: none;
+}

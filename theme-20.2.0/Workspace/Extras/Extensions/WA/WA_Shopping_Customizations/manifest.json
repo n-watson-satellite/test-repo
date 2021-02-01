@@ -1,0 +1,90 @@
+{
+	"name": "WA_Shopping_Customizations",
+	"fantasyName": "WA_Shopping_Customizations",
+	"vendor": "WA",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"target_version": {
+		"SCA": "20.1.0",
+		"SCS": ""
+	},
+	"version": "1.0.0",
+	"description": "Shopping Customization",
+	"assets": {
+		"fonts": {
+			"files": []
+		},
+		"services": {
+			"files": [
+				"services/Module.Service.ss"
+			]
+		}
+	},
+	"configuration": {
+		"files": []
+	},
+	"templates": {
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/Module/Templates/study_aids_collection_pdp.tpl",
+					"Modules/Module/Templates/study_aids_collection_options.tpl"
+				]
+			},
+			"checkout": {
+				"files": []
+			}
+		}
+	},
+	"sass": {
+		"entry_points": {
+			"shopping": "Modules/Module/Sass/_wacustomizations-module.scss",
+			"checkout": "Modules/Module/Sass/_wacustomizations-module.scss"
+		},
+		"files": [
+			"Modules/Module/Sass/_wacustomizations-module.scss"
+		]
+	},
+	"javascript": {
+		"entry_points": {
+			"shopping": "Modules/Module/JavaScript/RSM.WACustomizations.Module.js",
+			"checkout": "Modules/Module/JavaScript/WACustomizations.Checkout.js",
+			"myaccount": "Modules/Module/JavaScript/WACustomizations.MyAccount.js"
+		},
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/Module/JavaScript/RSM.WACustomizations.Module.js",
+					"Modules/Module/JavaScript/Module.View.js",
+					"Modules/Module/JavaScript/StudyAidsCollection.Options.View.js"
+				]
+			},
+			"checkout": {
+				"files": [
+					"Modules/Module/JavaScript/WACustomizations.Checkout.js",
+					"Modules/Module/JavaScript/WASA.Model.js"
+				]
+			},
+			"myaccount": {
+				"files": [
+					"Modules/Module/JavaScript/WACustomizations.MyAccount.js"
+				]
+			}
+		}
+	},
+	"ssp-libraries": {
+		"entry_point": "Modules/Module/SuiteScript/RSM.WACustomizations.Module.js",
+		"files": [
+			"Modules/Module/SuiteScript/RSM.WACustomizations.Module.js",
+			"Modules/Module/SuiteScript/Module.ServiceController.js"
+		]
+	},
+	"suitescript2": {
+		"files": [
+			"Modules/Module/SuiteScript2/Module.Service.ss"
+		]
+	},
+	"path": "SuiteScripts/Deploy_Extensions/WA/WA_Shopping_Customizations@1.0.0",
+	"activation_id": "2",
+	"extension_id": "401"
+}
